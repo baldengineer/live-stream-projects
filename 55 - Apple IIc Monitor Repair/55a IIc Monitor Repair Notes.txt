@@ -1,3 +1,32 @@
 2020-12-04 - Initial Stream
 
 Link to Sams Repair Manual: https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/misc/sams/Sams%20ComputerFacts%20Apple%20IIc%20Monitor.pdf
+
+
+These capacitors seemed to measure open:
+c505, c102, c411, c143, c105
+
+But after checking again they measured an isulation resistance. (I think all were in the >1Kohm range, but I do not remember now.)
+
+Resistance from the DC voltage rails to ground seems to be around 47 ohms.
+
+Before today the behavior was consistent:
+	Stable (clear) picture until the monitor was power cycled, the signal was removed (and then re-attached), or the computer power cycled.
+
+	It appears that after warming up, there is a circuit that locks onto the incoming signal which fails to get a lock. 
+
+During the stream, we noticed that while making measurements on D22 and R215, the picture went from distorted to correct with noise. The noise was a "scanning" line going from top-to-bottom (or bottom-to-top.... can't remember and the tube was upside-down.)
+
+It was also noticed that pressing down on the copper pour around D22 seemed to cause a distorted image to get corrected. And then sometimes, touching a single lead to the D22 pad nearest the edge of the PCB would correct the image. Sometimes pressing does nothing.
+
+Solder joints on L503, R510, J52, R51, Q18, C511, C512 (not populated), D15, D14, and J54 were cleaned and re-soldered. 
+
+Dexoit was sprayed on the contrast knob (exposed to the side of the montior), the three adjust knobs on the back, and three of the internal pots. (Internal pots received only a very small spray and no twisting.)
+
+A different cable was used to to connect IIc computer to monitor, no change. Deoxit also sprayed on cable and twisted in socket, no change.
+
+Near the end of the stream, the image would stablize on its own after cycling the composite connector. The pattern itself suggests it takes a moment for the monitor to lock horiztonally. 
+
+The next morning, the behavior of stabilizing on its own when re-connected persists. Also noted, partially inserting the composite cable gets a distorted image when then stablized once fully inserted.
+
+Feels like the initial scrambled image is still wrong though.
