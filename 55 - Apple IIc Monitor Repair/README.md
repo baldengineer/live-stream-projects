@@ -5,6 +5,8 @@ I bought this Apple IIc computer and monitor off of eBay. The seller listed it a
 
 The monitor does have a strange problem though. After it warms up AND the input signal is lost, the screen "skews" horizontally. The image is stable, so it is not a horizontal sync loss. If I let the monitor cool down for a few minutes, then it returns to normal.
 
+![Skewed Apple IIc Monitor Image](https://github.com/baldengineer/live-stream-projects/blob/main/55%20-%20Apple%20IIc%20Monitor%20Repair/IIc%20strange%20text%20example.jpg)
+
 There are two steps required to reproduce the problem:
 
 1. Let the monitor warm up for at least 2 minutes.
