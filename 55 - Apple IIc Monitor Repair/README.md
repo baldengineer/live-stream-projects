@@ -13,4 +13,4 @@ There are two steps required to reproduce the problem:
 The monitor was tested with two different computers, the problem exists with both.
 
 ### Stream History
-2020-11-04: First attempt at repair.
+2020-12-04: First attempt at repair.
