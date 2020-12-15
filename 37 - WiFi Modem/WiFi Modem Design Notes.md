@@ -9,6 +9,8 @@ On Line Phone panel, threads are:
 Create -> Thread on a face (like cylinder)
 Make sure to selected Modeled
 
+Added KiCad design files to the [WiFi9600 Modem repo](https://github.com/baldengineer/WiFi9600-Modem).
+
 
 ## 2020-12-06 "RS-232" Testing
 
