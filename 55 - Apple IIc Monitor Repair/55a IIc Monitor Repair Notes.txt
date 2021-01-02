@@ -25,16 +25,16 @@ C404 	330n	35v 	4mm x 6.5mm     - dipped ta, ?ohm
 
 -
 
-c408 	33u 	16v 	6.5mm x 11.5mm 	- 760m
-C508	33u	    16v		10.0 x 17mm		- 160mOhm (was this really 330?)
-c105 	47u 	16v 	6.5mm x 11.5mm	- 460mOhm
-c102 	47u 	16v 					- 230mOhm
-c103	100u 	16v		8mm x 12mm 		- 160mOhm
-c411 	220u 	16v		10mm x 13.5mm	- 160mOhm
-C409	470u	16v		10.5 x 20.5mm	- 120mOhm
-c412	470u	16v						- 180mohm
-C514	1000u	16v		13.5mm x 20mm 	- 70mOhm
-C704	2200u 	16v		16mm x 26.5mm	- 20 mOhm
+*c408 	33u 	16v 	6.5mm x 11.5mm 	- 760m
+*C508	33u	    16v		10.0 x 17mm		- 160mOhm (was this really 330?)
+*c105 	47u 	16v 	6.5mm x 11.5mm	- 460mOhm
+*c102 	47u 	16v 					- 230mOhm
+*c103	100u 	16v		8mm x 12mm 		- 160mOhm
+*c411 	220u 	16v		10mm x 13.5mm	- 160mOhm
+*C409	470u	16v		10.5 x 20.5mm	- 120mOhm
+*c412	470u	16v						- 180mohm
+*C514	1000u	16v		13.5mm x 20mm 	- 70mOhm
+*C704	2200u 	16v		16mm x 26.5mm	- 20 mOhm
 
 C701	3300u 	25v		18mm x 42mm		- 40mOhm
 
