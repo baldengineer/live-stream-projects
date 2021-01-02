@@ -23,14 +23,14 @@ C508	330u	16v		10.0 x 17mm		- 160mOhm
 C104 	10u 	35v 	5mm	x 11.5mm	- 1.21ohm
 c105 	47u 	16v 	6.5mm x 11.5mm	- 460mOhm
 
-C107	47u 	16v		8.5mm x 12mm 	- 210mOhm - NP
-C108	10u 	16v		6.5mm x 11.5mm	- 680mOhm - NP PAD!!
+* C107	47u 	16v		8.5mm x 12mm 	- 210mOhm - NP
+* C108	10u 	16v		6.5mm x 11.5mm	- 680mOhm - NP PAD!!
 
 C110	10u 	35v 	5mm x 11.5mm	- 1ohm
 
 C510	100u 	50v 	10.5mm x 17mm	- 160mOhm 
 C514	1000u	16v		13.5mm x 20mm 	- 70mOhm
-C515	4u		25v		16.5mm x 32mm	- NP? 70mOhm
+* C515	4u		25v		16.5mm x 32mm	- NP? 70mOhm
 
 C701	3300u 	25v		18mm x 42mm		- 40mOhm
 c102 	47u 	16v 					- 230mOhm
@@ -54,6 +54,15 @@ c413 	10u 	35v 	5mm x 11mm	    - 1ohm
 c408 	33u 	16v 	6.5mm x 11.5mm 	- 760m
 c405	10u 	35v 	5mm x 11mm 		- 1ohm
 C151 	10u 	63v 	6mm x 11mm		- 400 mOhm
+
+--
+Bipolar / Non-polarized search
+* C107	47u 	16v		8.5mm x 12mm 	- 210mOhm - NP
+* C108	10u 	16v		6.5mm x 11.5mm	- 680mOhm - NP PAD!!
+* C515	4u		25v		16.5mm x 32mm	- NP? 70mOhm
+
+Google Sheet: https://docs.google.com/spreadsheets/d/12xbDo_ABa1OU6DOPPcvCTLo_ywz5d0ZMBFhIhlyjz58/edit?usp=sharing
+
 ----------------------------------------------------------------
 2020-12-04 - Initial Stream
 
