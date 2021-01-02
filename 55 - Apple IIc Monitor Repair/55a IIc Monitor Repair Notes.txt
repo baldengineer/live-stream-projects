@@ -13,53 +13,47 @@ front of tube, near board short edge, two 2-pin connectors. left has blue tape o
 
 --- Cap removal
 				 	D  X Length
-C513	1u 		350v 	8mm x 12.5mm	- inside the CRT anode cage (14ohm ESR?)
-C518	1u		350v	8mm x 12.5mm	- 10ohm ESR
-
-C409	470u	16v		10.5 x 20.5mm	- 120mOhm
-C517	100u	63v		10.0 x 20.5mm	- 210mOhm
-C508	330u	16v		10.0 x 17mm		- 160mOhm
-
-C104 	10u 	35v 	5mm	x 11.5mm	- 1.21ohm
-c105 	47u 	16v 	6.5mm x 11.5mm	- 460mOhm
-
+* C513	1u 		350v 	8mm x 12.5mm	- inside the CRT anode cage (14ohm ESR?)
+* C518	1u		350v	8mm x 12.5mm	- 10ohm ESR
 * C107	47u 	16v		8.5mm x 12mm 	- 210mOhm - NP
 * C108	10u 	16v		6.5mm x 11.5mm	- 680mOhm - NP PAD!!
-
-C110	10u 	35v 	5mm x 11.5mm	- 1ohm
-
-C510	100u 	50v 	10.5mm x 17mm	- 160mOhm 
-C514	1000u	16v		13.5mm x 20mm 	- 70mOhm
 * C515	4u		25v		16.5mm x 32mm	- NP? 70mOhm
 
-C701	3300u 	25v		18mm x 42mm		- 40mOhm
+C406  	4.7u 	16v 	4mm x 6.5mm  	- dipped Ta, 2.6ohm
+c407 	4.7u 	16v 					- 3.6ohm
+C404 	330n	35v 	4mm x 6.5mm     - dipped ta, ?ohm
+
+-
+
+c408 	33u 	16v 	6.5mm x 11.5mm 	- 760m
+C508	33u	    16v		10.0 x 17mm		- 160mOhm (was this really 330?)
+c105 	47u 	16v 	6.5mm x 11.5mm	- 460mOhm
 c102 	47u 	16v 					- 230mOhm
-c103	100u 	16v		8mm x 12mm 	-	160mOhm
+c103	100u 	16v		8mm x 12mm 		- 160mOhm
+c411 	220u 	16v		10mm x 13.5mm	- 160mOhm
+C409	470u	16v		10.5 x 20.5mm	- 120mOhm
+c412	470u	16v						- 180mohm
+C514	1000u	16v		13.5mm x 20mm 	- 70mOhm
+C704	2200u 	16v		16mm x 26.5mm	- 20 mOhm
+
+C701	3300u 	25v		18mm x 42mm		- 40mOhm
+
+c413 	10u 	35v 	5mm x 11mm	    - 1ohm
+c405	10u 	35v 	5mm x 11mm 		- 1ohm
+C110	10u 	35v 	5mm x 11.5mm	- 1ohm
+C104 	10u 	35v 	5mm	x 11.5mm	- 1.21ohm
+
 
 c505	4.7u 	50v 	5.5 x 11.5m  	- 1.1ohm
 c111	4.7u 	50v 					- 1.28ohm
+C702	4.7u 	50v
+C510	100u 	50v 	10.5mm x 17mm	- 160mOhm 
+
+C151 	10u 	63v 	6mm x 11mm		- 400 mOhm
+C517	100u	63v		10.0 x 20.5mm	- 210mOhm
+
 
 C506	3.9nF	??? - film capacitor?
-C702	4.7u 	50v
-C704	2200u 	16v		16mm x 26.5mm	- 20 mOhm
-c412	470u	16v						- 180mohm
-c411 	220u 	16v		10mm x 13.5mm	- 160mOhm
-
-C404 	330n	35v 	4mm x 6.5mm     - dipped ta, ?ohm
-C406  	4.7u 	16v 	4mm x 6.5mm  	- dipped Ta, 2.6ohm
-c407 	4.7u 	16v 					- 3.6ohm
-
-
-c413 	10u 	35v 	5mm x 11mm	    - 1ohm
-c408 	33u 	16v 	6.5mm x 11.5mm 	- 760m
-c405	10u 	35v 	5mm x 11mm 		- 1ohm
-C151 	10u 	63v 	6mm x 11mm		- 400 mOhm
-
---
-Bipolar / Non-polarized search
-* C107	47u 	16v		8.5mm x 12mm 	- 210mOhm - NP
-* C108	10u 	16v		6.5mm x 11.5mm	- 680mOhm - NP PAD!!
-* C515	4u		25v		16.5mm x 32mm	- NP? 70mOhm
 
 Google Sheet: https://docs.google.com/spreadsheets/d/12xbDo_ABa1OU6DOPPcvCTLo_ywz5d0ZMBFhIhlyjz58/edit?usp=sharing
 
