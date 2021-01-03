@@ -36,21 +36,20 @@ C404 	330n	35v 	4mm x 6.5mm     - dipped ta, ?ohm
 *C514	1000u	16v		13.5mm x 20mm 	- 70mOhm
 *C704	2200u 	16v		16mm x 26.5mm	- 20 mOhm
 
-C701	3300u 	25v		18mm x 42mm		- 40mOhm
+*C701	3300u 	25v		18mm x 42mm		- 40mOhm
 
-c413 	10u 	35v 	5mm x 11mm	    - 1ohm
-c405	10u 	35v 	5mm x 11mm 		- 1ohm
-C110	10u 	35v 	5mm x 11.5mm	- 1ohm
-C104 	10u 	35v 	5mm	x 11.5mm	- 1.21ohm
+*c413 	10u 	35v 	5mm x 11mm	    - 1ohm
+*c405	10u 	35v 	5mm x 11mm 		- 1ohm
+*C110	10u 	35v 	5mm x 11.5mm	- 1ohm
+*C104 	10u 	35v 	5mm	x 11.5mm	- 1.21ohm
 
+*c505	4.7u 	50v 	5.5 x 11.5m  	- 1.1ohm
+*c111	4.7u 	50v 					- 1.28ohm
+*C702	4.7u 	50v
+*C510	100u 	50v 	10.5mm x 17mm	- 160mOhm 
 
-c505	4.7u 	50v 	5.5 x 11.5m  	- 1.1ohm
-c111	4.7u 	50v 					- 1.28ohm
-C702	4.7u 	50v
-C510	100u 	50v 	10.5mm x 17mm	- 160mOhm 
-
-C151 	10u 	63v 	6mm x 11mm		- 400 mOhm
-C517	100u	63v		10.0 x 20.5mm	- 210mOhm
+*C151 	10u 	63v 	6mm x 11mm		- 400 mOhm
+*C517	100u	63v		10.0 x 20.5mm	- 210mOhm
 
 
 C506	3.9nF	??? - film capacitor?
