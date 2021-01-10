@@ -1,9 +1,10 @@
+Link to schematic (KiCad and PDF): https://github.com/baldengineer/bit-preserve/tree/master/Apple/Peripherals/Monitor%20IIc%20-%20A2M4090/Monitor%20IIc%20-%20A2M4090 
+
 2021-01-08 Putting in new caps
 IC11, pin 1 is near C406
 
 
 2021-01-01 Remove PCB
-
 Regulator org, blue, white
 
 AC/Transformer T2 is marked on PCB and cable
