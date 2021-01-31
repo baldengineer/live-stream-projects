@@ -7,31 +7,28 @@ What happens when you combine chips from the LS family with chips from the HCT o
 
 
 ## Raw Parts List
-Analog Switch
-CD4066BE (DIP) and 74HC4066D (SOIC)
 
-Inverter
-CD4049UBE (DIP) [74xx drive], 
-CD4041UBE (DIP) [CMOS buffer], 
+### Analog Switch
+- CD4066BE (DIP) and 74HC4066D (SOIC)
 
-74HCT04 (SOIC), 
-SN74AHCT1G14DBVR (single gate HCT), 
-NC7S04M5X Single Gate (S?), 
-SN74AHCT04D (SOIC)
+### Inverter
+- CD4049UBE (DIP) [74xx drive], 
+- CD4041UBE (DIP) [CMOS buffer], 
+- 74HCT04 (SOIC), 
+- SN74AHCT1G14DBVR (single gate HCT), 
+- NC7S04M5X Single Gate (S?), 
+- SN74AHCT04D (SOIC)
+-    
+- 74HC14D, Hex Inverter, Schmidtt Trigger (SOIC)
+-   
+- 74S04, Hex Inverter, DIP, only one available
 
-74HC14D, Hex Inverter, Schmidtt Trigger (SOIC)
-
-74S04, Hex Inverter, DIP, only one available
-
-
-Single Gates
- 74 VHC 1G 14 - 10 (these were super cheap, but schmidtt)
- 74 HC  1G 14
-
- 74 AHC 1G 04 - advanced HC
- 74 HC  1G 04 *** lost it
- 74 LVC 1G 04
-
+### Single Gates
+- 74 VHC 1G 14 - 10 (these were super cheap, but schmidtt)
+- 74 HC  1G 14
+- 74 AHC 1G 04 - advanced HC
+- 74 HC  1G 04 *** lost it
+- 74 LVC 1G 04
 
 Newark #10M5369, captial SOT to SIP adapter
 
