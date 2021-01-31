@@ -3,7 +3,7 @@ What happens when you combine chips from the LS family with chips from the HCT o
 
 -[TI Logic Guide App Note - sdyu001ab](https://www.ti.com/lit/sg/sdyu001ab/sdyu001ab.pdf?ts=1612010759614)
 -[On Semi Introduction to and Comparison of 74HCT TTL - AN 368](https://www.onsemi.com/pub/Collateral/AN-368.pdf)
-
+-[7400 Series Info - Wikipedia](https://en.wikipedia.org/wiki/7400-series_integrated_circuits)
 
 
 ## Raw Parts List
