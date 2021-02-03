@@ -5,6 +5,15 @@ What happens when you combine chips from the LS family with chips from the HCT o
 - [On Semi Introduction to and Comparison of 74HCT TTL - AN 368](https://www.onsemi.com/pub/Collateral/AN-368.pdf)
 - [7400 Series Info - Wikipedia](https://en.wikipedia.org/wiki/7400-series_integrated_circuits)
 
+## Things to measure
+- Input (and output) voltage levels
+- Propigation delay
+- edge rate (in vs. out)
+- Max frequency?
+- EMI
+
+- Threshold input voltage changing with sine wave/slow edge on different families
+
 
 ## Raw Parts List
 
