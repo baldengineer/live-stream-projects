@@ -43,5 +43,26 @@ Newark #10M5369, captial SOT to SIP adapter
 
 
 
+## 2021-02-03 Stream Measurements
+
+Prop Delay input 0 to 5 volt
+		Prop-LH	RT 		FT
+AHCT - 12ns 	4ns	   2.4ns
+HCT  - 16ns		2.3ns  2ns
+HC  -  1.8ns	2.5ns  2.2ns
+LS  -  20ns    	20ns   6ns
+S   -  16ns     2.5ns  2.5ns
+TTL -  17.5ns   5.2ns  3.4ns
+
+Prop delay input 0 to 3 volt
+AHCT - 2ns
+HCT  - 6ns
+LS   - 6ns
+S    - 4ns
+TTL  - 6ns
+
+
+
+
 ## Livestream
 These notes are part of Bald Engineer Live. An [electronics live stream](https://twitch.tv/baldengineer) that covers soldering, programming, and blinking LEDs.
