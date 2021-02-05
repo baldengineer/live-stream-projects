@@ -7,7 +7,9 @@ This TO-3 board is a switching power supply. It runs significantly cooler with t
 It is designed to be a direct drop-in replacement for the LM323.
 
 ### 2021-02-05 Stream Notes
+![images of DM solder paste dispenser](https://dmdispenser.files.wordpress.com/2016/06/cropped-banner3.jpg)
 Using the [DM Solder Paste Dispenser](https://dmdispenser.wordpress.com/) for solder paste. It is also available on Tindie.
 
 ### 2020-11-06 Stream Notes
+![after dark pcb of a to3 shaped board](https://github.com/baldengineer/Drop-In-TO-3-Switching-Regulator/blob/main/images/TO3-After-Dark-PCB-Empty.png)
 We put it together. It worked. Yay. The KiCad Design files can be found in the repo [Drop-In TO3 Switching Regulator](https://github.com/baldengineer/Drop-In-TO-3-Switching-Regulator). (What a terrible name!)
