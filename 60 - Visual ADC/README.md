@@ -1,11 +1,14 @@
-## 60 - Visual ADC
+## 60 - Visual ADC Notes
 Desinging a successive-approximation-registor analog-to-digital-converter. Otherwise known as a SAR ADC. 
 
 My plan is to enter this project into an [element14 Community](https://element14.com/?ICID=baldengineer) contest. The [Project14 - Data Conversion](https://www.element14.com/community/community/project14/dataconversion?ICID=baldengineer) contest is all about, well, converting data.
 
 Instead of a project involving data conversion, I wanted to build a discrete ADC. My pick is a "successive-approximation-registor" (SAR) ADC. Why? Because it needs a digital-to-analog converter to work! Also, because I think it would look really cool to have some LEDs and Relays when it runs. 
 
-## 2021-02-07 Design Notes
+## 2021-02-10 Streaming Notes
+* Created repo for the project's design files: [files here](https://github.com/baldengineer/VADC-visualized-adc).
+
+## 2021-02-07 Streaming Notes
 Small Signal Realy from MCP [MC25120]: http://www.farnell.com/datasheets/3176363.pdf
 	KiCad Footprint: Relay_THT:Relay_SPDT_HsinDa_Y14
 
