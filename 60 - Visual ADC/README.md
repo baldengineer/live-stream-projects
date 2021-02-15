@@ -5,6 +5,15 @@ My plan is to enter this project into an [element14 Community](https://element14
 
 Instead of a project involving data conversion, I wanted to build a discrete ADC. My pick is a "successive-approximation-registor" (SAR) ADC. Why? Because it needs a digital-to-analog converter to work! Also, because I think it would look really cool to have some LEDs and Relays when it runs. 
 
+## 2021-02-14 Streawming Notes
+Old In:
+x = 123.947
+y = 116.16166
+
+Old Out:
+x = 148.2548
+y = 116.16166
+
 ## 2021-02-10 Streaming Notes
 * Created repo for the project's design files: [files here](https://github.com/baldengineer/VADC-visualized-adc).
 
