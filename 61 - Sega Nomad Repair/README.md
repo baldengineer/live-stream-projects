@@ -5,6 +5,15 @@ Scored an excellent deal on two Nomads on eBay. One seems to work but sounds a b
 Re-Cap Day. Caps found at:
 https://docs.google.com/spreadsheets/d/1yh0ff7QBfQPTKMZIEFk0l7tAiEY-iv-wVD6X7ru9FAE/edit?usp=sharing
 
+Replaced all of the electrolytic caps with the caps in that google doc. They all fit on the pads well and the Nomad booted fine!
+
+Missed a few mechnical details, but will adjust later. I am considering a new speaker even though it sounds pretty good.
+
+Forgot to order CE206 and CE217. They were 22 uF, just used 47 uF instead.
+
+
+
+
 
 ## 2021-02-12 Streaming Notes
 * Initial attempt
