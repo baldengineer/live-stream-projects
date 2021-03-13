@@ -1,6 +1,11 @@
 ## 61 - Sega Nomad Repair Notes
 Scored an excellent deal on two Nomads on eBay. One seems to work but sounds a bit noisy. The other will not power on. Let's tear them apart and see what can be fixed.
 
+## 2021-03-12 Streaming Notes
+Re-Cap Day. Caps found at:
+https://docs.google.com/spreadsheets/d/1yh0ff7QBfQPTKMZIEFk0l7tAiEY-iv-wVD6X7ru9FAE/edit?usp=sharing
+
+
 ## 2021-02-12 Streaming Notes
 * Initial attempt
 * Was broken solder joint at D201

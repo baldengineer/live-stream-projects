@@ -6,6 +6,7 @@ My plan is to enter this project into an [element14 Community](https://element14
 Instead of a project involving data conversion, I wanted to build a discrete ADC. My pick is a "successive-approximation-registor" (SAR) ADC. Why? Because it needs a digital-to-analog converter to work! Also, because I think it would look really cool to have some LEDs and Relays when it runs. 
 
 ## 2021-02-14 Streawming Notes
+Finished the PCB 
 Old In:
 x = 123.947
 y = 116.16166
