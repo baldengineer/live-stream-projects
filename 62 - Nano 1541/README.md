@@ -1,6 +1,8 @@
 ## 62 - Nano 1541
 Access a Commodore 1541 from an Arduino Nano 33 IoT
 
+Design files: https://github.com/baldengineer/Arduino-1541
+
 ## 2021-03-14 Streaming Notes
 Happy Pie Day!
 
