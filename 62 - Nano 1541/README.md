@@ -7,7 +7,13 @@ Using Sparkfun's level-shifter as reference: https://learn.sparkfun.com/tutorial
 
 
 ## Commmodore DOS commands for the 1541
-[Summerized from Jay Versluis's post](https://wpguru.co.uk/2014/06/commodore-1541-dos-commands/).
+[Summerized from Jay Versluis's post](https://wpguru.co.uk/2014/06/commodore-1541-dos-commands/) and [Commodore DOS Wikipedia](https://en.wikipedia.org/wiki/Commodore_DOS) page.
+
+### command string
+`0:ADDRESSBOOK,S,W`
+#### Save BASIC program as a SEQ
+`SAVE "0:FILE,SEQ,WRITE",8,1`
+
 ### open a channel
 `OPEN 15,8,15`  (channel, device,?)
 ### issue command
@@ -17,6 +23,7 @@ Using Sparkfun's level-shifter as reference: https://learn.sparkfun.com/tutorial
 * SAVE or LOAD closes the channel
 
 ### Reading Error Channel
+Has to be run as a BASIC program because `INPUT#` doesn't work in direct mode.
 ```
 10 OPEN 15,8,15
 20 INPUT# 15,a,b$,c,d
@@ -26,33 +33,36 @@ Using Sparkfun's level-shifter as reference: https://learn.sparkfun.com/tutorial
 60 PRINT "sector: ";d
 70 CLOSE 15
 ```
+Alternative method:
+`OPEN 1,8,15:INPUT#1,E,E$,T,S:PRINT E,E$,T,S:CLOSE 1`
 
+* Note: `0` and `1` are for dual-drive systems (two drives in one unit, like old PET drives)
 
 ### Format a Flopy disk
 `PRINT#15,"NEW0:disktitle,id"`
-* Note: `N0` also works instead of `NEW0`
-* Note: `0` and `1` are for dual-drive systems (two drives in one unit, like old PET drives)
+`PRINT#15,"N0:disktitle,id"`
+
+
 * Not including id clears BAM, no sectors
 
 ### Initialize
-`PRINT#15,"INITALIZED0"`
+`PRINT#15,"INITALIZE:0"`
+`PRINT#15,"I0:"`
 * Reads BAM into drive's memory (not a format)
 
 ### Copy Files
 `PRINT#15,"COPY:foo=bar"`
+`PRINT#15,"C0:NEW=0:OLD"`
 
 ### Rename Files
 `PRINT#15,"RENAME0:foo=bar"`
+`PRINT#15,"R0:foo=bar"`
 
 ### Delete Files
 `PRINT#15,"SCRATCH0:foo"`
 
 ### Validate (repair)
 `PRINT#15,"VALIDATE"` (no drive select?)
-
-
-
-
 
 #### Channels
 * 0 and 1: OS to transfer files
