@@ -70,12 +70,47 @@ Alternative method:
 * 15: Common for drive communication
 
 
+## 2021-03-27 Streaming Notes
+### Happy Arduino Day!
+
 
 ## 2021-03-26 Streaming Notes
+Used the wrong pinout on the DIN6 connector.
+`
+PCB   C64
+---------
+DAT = DAT
+ATN = CLK
+SRQ = ATN
+`
+
 Soldering the interposer and breadboard breakout board. Then we're going to try and capture some traffic on a scope or logic analyzer between a C64 and disk drive.
+
+151DEC, 97 HEX, 1001 0111
+                1000 0111
+
+199DEC, C7 HEX, 1101 0111
+D7
+
+---`
+Host  Device
+0x14			0001 0100 -> 1101 0111 B7
+0xF6			1111 0110 -> 1001 0000 90
+	  0x92		1001 0010 -> 1011 0110 B6
+	  0x0C		0000 1100 -> 1100 1111 CF
+	  0x5C		0101 1100 -> 1100 0101 C5
+	  0xB0		1101 0000 -> 1111 0100 F4
+0xFC
+`---
+Bus is definitely LSB first. Data appears to be CLK falling edge and polarity is "normal."
+
+### magicaros Full IEC
+ LISTEN DEV -> OPEN CHAN -> SEND FILENAME -> UNLISTEN ALL -> TALK DEV -> REOPEN CHAN -> DEVICE become master of the bus -> DATA TRANSFER -> C64 master again -> UNTALK ALL -> LISTEN -> CLOSE CHAN -> UNLISTEN ALL
 
 ## 2021-03-14 Streaming Notes
 Happy Pie Day!!
 
 ## Livestream
 These notes are part of Bald Engineer Live. An [electronics live stream](https://twitch.tv/baldengineer) that covers soldering, programming, and blinking LEDs.
+
+
