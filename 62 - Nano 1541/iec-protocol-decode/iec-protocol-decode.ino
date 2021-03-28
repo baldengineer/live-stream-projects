@@ -1,5 +1,5 @@
-volatile uint8_t serial_word = 0x0;
-volatile uint8_t bit_idx = 0;
+volatile uint8_t  serial_word = 0x0;
+volatile uint8_t  bit_idx = 0;
 volatile uint32_t last_clock_micros = 0;
 volatile uint32_t last_clock_rise = 0;
 
@@ -30,9 +30,9 @@ void shift_register_isr() {
       return;
     }
   } 
-  // store the data bit
+  // store the data bit, reverses the bus words
+  // to make it more readable
   serial_word = serial_word >> 1;
-
   if (digitalRead(dat_pin))
    serial_word = serial_word | 0x80;
   else
@@ -46,6 +46,7 @@ void shift_register_isr() {
   }
 
 
+  // these aren't used yet
  // mode = digitalRead(atn_pin);
   last_clock_micros = micros();
   last_clock_rise = millis();
@@ -80,25 +81,21 @@ void setup() {
 
 void loop() {
   handle_serial();
+  // not certain why this keeps the bits aligned
   if (millis() - last_clock_rise >= 900) {
     bit_idx = 0;
   }
 
- /* if (atn_change_flag) {
+  if (atn_change_flag) {
     Serial.print("ATN Change: ");
     Serial.println(mode);
     atn_change_flag = false;
-  }*/
+  }
 
   if (byte_ready) {
     byte_ready = false;
-   /* if (serial_word <= 0xF)
-      Serial.print("0");
-    Serial.println(serial_word, HEX);*/
     decode_commands(serial_word, mode);
-   // serial_word = 0x0;
   }
-
 
   if (EOI_flag && (digitalRead(clk_pin) == LOW) && (micros() - last_clock_micros >= 200))
     EOI_flag  = true;
@@ -110,12 +107,10 @@ void loop() {
 }
 
 void decode_commands(uint8_t word, uint8_t mode) {
+  Serial.print(millis());  Serial.print(", 0x");
   if (word <= 0xF)
-    Serial.print(F("0x0"));
-  else
-    Serial.print(F("0x"));
-  Serial.print(word, HEX);
-  Serial.print(F(", "));
+    Serial.print(F("0"));
+  Serial.print(word, HEX); Serial.print(F(", "));
 
   if (mode == SELECT) {
     switch(word & 0xF0) {
@@ -131,21 +126,32 @@ void decode_commands(uint8_t word, uint8_t mode) {
         }
       break;
 
+      case 0x40:
+        // OPEN CHANNEL
+        Serial.print(F("TALK ADDRESS="));
+        Serial.println(word & 0x1F);
+      break;      
+
       case 0x60:
         // OPEN CHANNEL
         Serial.print(F("OPEN CHANNEL="));
+        Serial.println(word & 0x1F);
+      break;
+
+      case 0xE0:
+        // CLOSE Secondary Channel
+        Serial.print(F("CLOSE SECONDARY="));
         Serial.println(word & 0x0F);
       break;
 
       case 0xF0:
-        // Open SEcondary channel
+        // OPEN Secondary channel
         Serial.print(F("OPEN SECONDARY="));
         Serial.println(word & 0x0F);
       break;
 
-
       default:
-      Serial.println();
+       Serial.println();
       break;
     }
   } else {

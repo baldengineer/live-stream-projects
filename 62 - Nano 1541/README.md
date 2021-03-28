@@ -73,15 +73,17 @@ Alternative method:
 ## 2021-03-27 Streaming Notes
 ### Happy Arduino Day!
 
+[This page on pagetable](https://www.pagetable.com/?p=1135) has a great explanation of the physical layer.
+
 
 ## 2021-03-26 Streaming Notes
 Used the wrong pinout on the DIN6 connector.
 `
 PCB   C64
 ---------
-DAT = DAT
-ATN = CLK
-SRQ = ATN
+DAT = DAT - Green
+ATN = CLK - Blue
+SRQ = ATN - Purple
 `
 
 Soldering the interposer and breadboard breakout board. Then we're going to try and capture some traffic on a scope or logic analyzer between a C64 and disk drive.
