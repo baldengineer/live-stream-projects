@@ -15,6 +15,12 @@ The project / build I am attemping is a Star Trek: The Next Generation style Tri
 ## 2021-04-18 Stream Notes
 Off stream, I got capacitive touch buttons to work. You can see them in this [Instagram post](https://www.instagram.com/p/CNtmSBfjlO5/?utm_source=ig_web_copy_link).
 
+Tried with four resistor values:
+* 4.7K: stuck closer to open and wasn't very sensitive to light
+* 220: barely worked, stayed open
+* 60K: decent dynamic range, good sensitivity
+* 100Kish: slightly better than 60K but had harder time going to open
+
 ## 2021-04-13 Stream Notes
 * [MCP603 Op Amp](https://www.microchip.com/wwwproducts/en/MCP603)
 
