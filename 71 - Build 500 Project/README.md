@@ -10,6 +10,7 @@ The project / build I am attemping is a Star Trek: The Next Generation style Tri
 ### Links 
 * [Build Inside the Box Competition Overview](https://www.element14.com/community/docs/DOC-96290/l/build-inside-the-box-500?ICID=baldengineer)
 * [Build Inside 500 Contents](https://www.element14.com/community/docs/DOC-96361/l/build-inside-the-box-whats-in-the-box-member-challenge?ICID=baldengineer)
+* [Vishay Photointerruptor - TCST1130](https://www.vishay.com/docs/83764/tcst1103.pdf) 
 
 ## 2021-04-18 Stream Notes
 Off stream, I got capacitive touch buttons to work. You can see them in this [Instagram post](https://www.instagram.com/p/CNtmSBfjlO5/?utm_source=ig_web_copy_link).
