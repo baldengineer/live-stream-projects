@@ -25,6 +25,19 @@ Bit: 9,558284320
 Bit: 10,558712841
 Bit: 11,562415160
 
+548958881
+552898600
+553396161
+553999440
+554603641
+555003240
+555973281
+556957120
+557784961
+558284320
+558712841
+562415160
+
 
 ## Livestream
 These notes are part of Bald Engineer Live. An [electronics live stream](https://twitch.tv/baldengineer) that covers soldering, programming, and blinking LEDs.

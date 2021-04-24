@@ -12,6 +12,9 @@ The project / build I am attemping is a Star Trek: The Next Generation style Tri
 * [Build Inside 500 Contents](https://www.element14.com/community/docs/DOC-96361/l/build-inside-the-box-whats-in-the-box-member-challenge?ICID=baldengineer)
 * [Vishay Photointerruptor - TCST1130](https://www.vishay.com/docs/83764/tcst1103.pdf) 
 
+## 2021-04-23 Stream Notes
+* Removing WAV header: Deleted from the end of the word "data" to the first 0x80. Should be 44 bytes.
+
 ## 2021-04-21 Stream Notes
 * [Audio Library Link to play WAV on SAMD21](https://github.com/BriscoeTech/SamdAudio)
 * [Arduino i2c scanner](https://playground.arduino.cc/Main/I2cScanner/)
