@@ -12,6 +12,10 @@ The project / build I am attemping is a Star Trek: The Next Generation style Tri
 * [Build Inside 500 Contents](https://www.element14.com/community/docs/DOC-96361/l/build-inside-the-box-whats-in-the-box-member-challenge?ICID=baldengineer)
 * [Vishay Photointerruptor - TCST1130](https://www.vishay.com/docs/83764/tcst1103.pdf) 
 
+## 2021-04-25 Stream Notes
+* on the 128x64, 9pt non-bold, 3 lines down, 12 characters across
+* c++ pointers, from d3jake: `The syntax is to use . when accessing the member variable/function of an object. If you are accessing the member variable of an object via pointer, you use ->`
+
 ## 2021-04-23 Stream Notes
 * Removing WAV header: Deleted from the end of the word "data" to the first 0x80. Should be 44 bytes.
 
