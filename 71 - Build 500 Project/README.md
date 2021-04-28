@@ -11,6 +11,7 @@ The project / build I am attemping is a Star Trek: The Next Generation style Tri
 * [Build Inside the Box Competition Overview](https://www.element14.com/community/docs/DOC-96290/l/build-inside-the-box-500?ICID=baldengineer)
 * [Build Inside 500 Contents](https://www.element14.com/community/docs/DOC-96361/l/build-inside-the-box-whats-in-the-box-member-challenge?ICID=baldengineer)
 * [Vishay Photointerruptor - TCST1130](https://www.vishay.com/docs/83764/tcst1103.pdf) 
+* [Github repo with code (and, eventually, design fles)[https://github.com/baldengineer/baldcorder-mk1]
 
 ## 2021-04-25 Stream Notes
 * on the 128x64, 9pt non-bold, 3 lines down, 12 characters across
