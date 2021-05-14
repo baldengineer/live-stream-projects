@@ -6,6 +6,16 @@ Project itself is a time tracking device. When it beeps, user will rotate it to 
 
 ## Stream Notes: 2021-05-09 - Happy Mother's Day
 
+Possible tasks [6 sides]
+* Email
+* Working [Editing / Writing / Modeling]
+* Reddit [internet goofing off]
+* Thinking? lol just kidding
+* Break
+* Meeting
+* 
+
+
 
 ## live stream projects
  Bald Engineer's Livestream projects
