@@ -5,6 +5,11 @@ Creating a portable Apple ][ using original hardware.
 ## TODO Items
 * On IIgs, check TP154 and Pin 21 on Mega II to see what signal looks like... is it composite video-ish?
 
+
+## 2021-06-30 Stream Notes: IIe Keyboard Emulator
+
+
+
 ## 2021-05-14 Stream Notes
 * What is "SERVIDEO"?
 ** From rjhelms: [classic NTSC output on MEGA II](https://comp.sys.apple2.narkive.com/WPcrB0W0/classic-ntsc-output-for-the-apple-iigs)
