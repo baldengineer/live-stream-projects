@@ -5,6 +5,10 @@ Creating a portable Apple ][ using original hardware.
 ## TODO Items
 * On IIgs, check TP154 and Pin 21 on Mega II to see what signal looks like... is it composite video-ish?
 
+## 2021-07-25 Stream Notes: Kinda boot?
+Need to tie NMI, RDY, IRQ to HIGH for boot
+RESET low then HIGH
+
 
 ## 2021-07-07 Stream Notes: IIe Keyboard Emulator
 ANY_KEY to KEY_RDY is approxmiatley 13ms
