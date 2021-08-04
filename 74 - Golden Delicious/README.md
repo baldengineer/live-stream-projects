@@ -1,9 +1,26 @@
 ## 74 - Golden Delicious
 
-Creating a portable Apple ][ using original hardware.
+Creating a mini Apple //e using original hardware.
 
-## TODO Items
-* On IIgs, check TP154 and Pin 21 on Mega II to see what signal looks like... is it composite video-ish?
+## 2021-08-04 Stream Notes: So close...
+Links to help:
+
+ROM Disassembly. There are two separate ROM files in the IIe. Boot process switches 
+between them. Each defines different soft switches. 
+* IIe Monitor ROM (Fxxx): https://6502disassembly.com/a2-rom/Unenh_IIe_F8ROM.html
+* IIe 80-col ROM (Cxxx):  https://6502disassembly.com/a2-rom/Unenh_IIe_80col.html
+
+Design Files for the three prototype boards available here.
+* Golden Delicious Deisgn Files: https://github.com/baldengineer/Golden-Delicious
+ * Also, decoders/symbol tables for IIe ROM and 6502: https://github.com/baldengineer/Golden-Delicious/tree/master/waveforms%20decoders
+
+ Good resource for understanding 6502 instructions:
+* https://www.masswerk.at/6502/6502_instruction_set.html#BPL
+
+6502 Disassembly Plugin for HxD:
+* https://github.com/DigicoolThings/HxD_DasmDataInspectorPlugin
+
+
 
 ## 2021-07-25 Stream Notes: Kinda boot?
 Need to tie NMI, RDY, IRQ to HIGH for boot
