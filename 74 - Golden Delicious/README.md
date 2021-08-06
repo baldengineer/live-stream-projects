@@ -3,6 +3,8 @@
 Creating a mini Apple //e using original hardware.
 
 ## 2021-08-04 Stream Notes: So close...
+### AKA, the Day of the first boot:
+* https://clips.twitch.tv/DarlingOddAdminOSsloth-mlyplWCnhfDNCTM2
 Links to help:
 
 ROM Disassembly. There are two separate ROM files in the IIe. Boot process switches 
@@ -19,6 +21,25 @@ Design Files for the three prototype boards available here.
 
 6502 Disassembly Plugin for HxD:
 * https://github.com/DigicoolThings/HxD_DasmDataInspectorPlugin
+
+---
+* Why does SET80COL and KBD both share the $C000 soft switch?
+ * squire: one is read and one is write, 
+
+### Patched ROM to skip DIAGS (since no keyboard is attached)
+ ```
+ $C23F: jmp $C264
+
+c23f: 0x4c 0x64 0xc2
+nop nop
+nop nop nop
+nop nop
+
+
+1010
+1011
+1100
+```
 
 
 
