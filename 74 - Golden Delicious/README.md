@@ -2,6 +2,12 @@
 
 Creating a mini Apple //e using original hardware.
 
+## Link to Design Files
+* https://github.com/baldengineer/Golden-Delicious
+
+## 2021-09-08 Stream Notes
+* Link to (branched) prototyping pcb files: https://github.com/baldengineer/Golden-Delicious/tree/gd-protoboard-pcb-rev1/kicad%20files/gd%20protoboard%20pcb
+
 ## 2021-08-04 Stream Notes: So close...
 ### AKA, the Day of the first boot:
 * https://clips.twitch.tv/DarlingOddAdminOSsloth-mlyplWCnhfDNCTM2
