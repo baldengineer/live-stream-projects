@@ -12,3 +12,5 @@ Working repo for projects while I live stream. If the project evolves more, it w
 This repo is not intended to be a statement-of-record. Just a place to dump stuff while I work on it, so the best chat on the internet can help. :) Hi Chat!
 
 https://twitch.tv/baldengineer
+
+Designing an RP2040 circuit board. (The same processor in the Pi Pico.) We'll use this board in the Mini Apple IIe project to connect a USB keyboard. Currently: Capturing the schematic. Notes/Info: https://bald.ee/82-notes
