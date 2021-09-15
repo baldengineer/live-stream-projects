@@ -1,5 +1,36 @@
 # 41 - Reflow Controller V2
 
+
+## 2021-09-15 Stream Notes
+FUSED: blue on top, orange on bottom
+SSR/JP3: 
+[Orange, Yellow/GRN] Orange on top, right. yellow bellow orange, green next to yellow
+
+BUTTONS/JP4B1
+BT1 Purple
+BT2 Yellow
+BT3 Grey
+BT4 White
+BT5 Blue
+GND Black
+
+
+POWER/J2:
+Jack In: Orange
+GND: GREEN
+
+JP4/SSR_SIG: WHite
+
+
+JP3A1
+SO Blue
+CLK Purple
+CS White
+VCC Yello
+(skip)
+GND? Green
+
+
 ## 2021-09-12 Stream Notes
 In Feburary 2021, we re-designed the Open Vapors reflow controller control board. It successfully soldered and powered-up on the first try. During a programming stream, new features and capabilities were attempted. That stream ended with trying to do *something* with the RTC.
 
@@ -7,12 +38,11 @@ On this 9/12 stream, we pick up where that one ended.
 
 Know things that need to be fixed:
 * Is power wired correctly?
-* Front Panel
-* Date time
- * Tell date time to "use this value"
+* ~~Front Panel~~
+* ~~Date time~~
  * update date/time (through UI/serial)
  * get current time (print UI/serial)
- * get a timestamp (for datalogging)
+ * ~~get a timestamp (for datalogging)~~
 * Buzzer
 * Bluetooth (BLE Serial)
 * SSR Testing
