@@ -2,6 +2,7 @@
 
 
 ## 2021-09-15 Stream Notes
+
 FUSED: blue on top, orange on bottom
 SSR/JP3: 
 [Orange, Yellow/GRN] Orange on top, right. yellow bellow orange, green next to yellow
@@ -13,6 +14,9 @@ BT3 Grey
 BT4 White
 BT5 Blue
 GND Black
+
+JP2 SSR_SW: Yellow/Orange
+JP3 SSR_SIG: Blue (+) on top, Green (-) on Bottom
 
 
 POWER/J2:
