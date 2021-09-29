@@ -1,5 +1,10 @@
 # 82 Custom RP2040 PCB
 
+## 2021-09-26 Notes
+* Board 1 - Short on GPIO18 (QFN 29) [or could be GPIO19 QFN30]
+ * seems to take code
+* Board 2 - Short on 245_EN (QFN 15)
+
 ## 2021-09-01 Notes
 * [Using RP2040 to build boards Official PDF](https://datasheets.raspberrypi.org/rp2040/hardware-design-with-rp2040.pdf)
 * [Minimal KiCad Project Files (from above PDF)](https://datasheets.raspberrypi.org/rp2040/Minimal-KiCAD.zip)
