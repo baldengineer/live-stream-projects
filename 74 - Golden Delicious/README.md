@@ -5,6 +5,38 @@ Creating a mini Apple //e using original hardware.
 ## Link to Design Files
 * https://github.com/baldengineer/Golden-Delicious
 
+## 2021-10-10 Stream Notes
+RP2040 booting with 0x00 0x20 as the keyboard key, causes a "p00p boot" and a overflow error (that types slowly).
+
+Booting with 0xA0 or 0xC1 (0x20 and 0x41 with anykey bit set), it seems to boot okay and types stupid fast. :)
+
+### KSELx notes that used to be in the PIO:
+```
+; KSEL0 to go HIGH
+; KSEL1 and KSEL1 to be LOW
+; RW to be HIGH
+; PH0 low or high?
+; ---
+; KSEL2 go LOW
+; KSEL1 is low?
+; KSEL0 is HIGH or LOW
+;
+; KSEL0 is HIGH AND R/W is HIGH
+; then we'll put data out when PH0 goes HIGH
+; --or--
+; KSEL1 is LOW and R/W is LOW 
+; then we'll put data when PH0 goes HIGH 
+; and then clear high bit of keyboard value
+
+; AKD  1=key pressed 0=keys free
+;
+;; if KSEL0 == LOW and R/W == LOW, then do nothing
+;; if KSEL0 == LOW and R/W == HIGH, then we put value on the bus
+;; --
+;; if KSEL0 == HIGH and R/W == XX, then we put value on bus and clear it
+;;
+```
+
 ## 2021-09-08 Stream Notes
 * Link to (branched) prototyping pcb files: https://github.com/baldengineer/Golden-Delicious/tree/gd-protoboard-pcb-rev1/kicad%20files/gd%20protoboard%20pcb
 
