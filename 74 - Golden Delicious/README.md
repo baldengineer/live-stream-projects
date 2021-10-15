@@ -5,10 +5,50 @@ Creating a mini Apple //e using original hardware.
 ## Link to Design Files
 * https://github.com/baldengineer/Golden-Delicious
 
+## 2021-10-14 Discord VC Notes
+We met to discuss how C000 and C010 work. It was realized that the strobes for each are different signals. It is still unclear how the IOU and MMU in the IIe work together to determine WHICH switch is being hit. But, we at least understand what software expects to happen. (and we think we understand how the IIgs's KBDGLU and MEGA talk to each other.)
+
+```
+Reqs:
+ 1. MD6:0 out of the PIO
+
+ 2. Tasks:
+         1. enabling the 245 during data phase AND
+             C000 READ + KEYRDY
+             C010 READ + ANYRD
+    
+         2. C010 READ or WRITE, clear KEYRDY
+---
+$C000 Keyboard data and KEYRDY
+    Combo flag and switch
+
+$C010 Keyboard Data and ANYKEY, 
+    but also clears KEYRDY
+
+```
 ## 2021-10-10 Stream Notes
 RP2040 booting with 0x00 0x20 as the keyboard key, causes a "p00p boot" and a overflow error (that types slowly).
 
 Booting with 0xA0 or 0xC1 (0x20 and 0x41 with anykey bit set), it seems to boot okay and types stupid fast. :)
+
+### Trying to explain difference between C000 and C010
+```
+Cxxx
+
+C000 -> Checking if a key has been pressed
+C010 -> Clearing the pressed flag
+
+; bit 7 (8th) is the ANYKEY strobe
+-> C000
+<- 0x00  ?010 0000
+
+-> C010
+<- 0xC1 1100 0001
+        0100 0001
+
+-> C000
+<- 0x41 0100 0001
+```
 
 ### KSELx notes that used to be in the PIO:
 ```
