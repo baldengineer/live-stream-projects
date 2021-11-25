@@ -5,6 +5,54 @@ Creating a mini Apple //e using original hardware.
 ## Link to Design Files
 * https://github.com/baldengineer/Golden-Delicious
 
+## 2021-11-14 Stream Notes
+Oh, by the way, we can boot from disks. Like, real ones.
+
+* This is the 8-bit and 7-bit strings for the Apple //f (0x03FA, in ROM file)
+C1 F0 F0 EC E5 A0 DD DB
+41 70 70 6C 65 20 5D 5B
+ A  p  p  l  e     ]  [
+ 
+41 70 70 6C 65 20 
+
+## 2021-10-20 Stream Notes
+Left Arrow: 80
+Right Arrow: 79
+Up Arrow: 82
+Down Arrow: 81
+ESC: 41
+Tab: 43
+Enter: 40
+
+CLR/Home: 74
+Restore: 70
+40/80 Display: 71
+Run Stop: 72
+F1-F12: 58 to 69
+
+## 2021-10-17 Stream Notes
+`PR#4` returned:
+```
+MMU FLAG E4:4
+IOU FLAG E5:1
+```
+LA shows address loop:
+```
+C510
+C511
+C512
+```
+which is also on the data bus
+
+### Slotmaker is acting like a IIgs
+`C02D` is enable for slotmaker to switch between internal and cards.
+
+`0x02` enables the slot card 1
+
+pg 183 (Chapter 8 I/O Expansion Slots) in the IIgs hardware reference
+
+
+
 ## 2021-10-14 Discord VC Notes
 We met to discuss how C000 and C010 work. It was realized that the strobes for each are different signals. It is still unclear how the IOU and MMU in the IIe work together to determine WHICH switch is being hit. But, we at least understand what software expects to happen. (and we think we understand how the IIgs's KBDGLU and MEGA talk to each other.)
 
