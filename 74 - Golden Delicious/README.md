@@ -5,6 +5,52 @@ Creating a mini Apple //e using original hardware.
 ## Link to Design Files
 * https://github.com/baldengineer/Golden-Delicious
 
+## 2022-01-14 Stream Notes
+(Am I still putting them here?)
+
+```
+// N-Key Roll Over on the IIe
+
+Press key0, repeat key0
+if key1 is pressed, then report key1 and repeat key1
+keep repeating key1 until no more pressees
+
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+as
+
+asasasasasasasasasasasas
+asasasasasasasasasasasasas
+asasasasasasasasasasasasasasdssdsd
+
+sdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsfsfsfsfsfsfsfsfsfqppqqpqpqp
+
+qpqpqpqpqpqppqqpqppqsaasasasasasasasasasasasas
+
+// todo: what happens on USB reports when you get more than 4 (or 6 or whatever)?
+
+instead of 'any key' make it 'last key' and have it set to null if no key is pressed
+
+while (any_key_pressed) {
+    key0 is pressed
+        write_key(key_value)
+
+    key1 is pressed
+        write_key(key_value)    
+}
+
+raise_key();
+
+report: 4,22,0,0,0,0,
+report: 4,22,7,0,0,0,
+report: 4,22,7,9,0,0,
+report: 4,22,7,0,0,0,
+report: 4,22,7,11,0,0,```
+
+
 ## 2021-11-14 Stream Notes
 Oh, by the way, we can boot from disks. Like, real ones.
 
