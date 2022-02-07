@@ -5,6 +5,28 @@ Creating a mini Apple //e using original hardware.
 ## Link to Design Files
 * https://github.com/baldengineer/Golden-Delicious
 
+## 2022-02-06 Stream Notes
+Joystick stuff:
+x: pdl(0)
+y: pdl(1)
+```
+10 print pdl(0);",";pdl(1)
+20 goto 10
+```
+
+Joystick buttons are Open and Closed Apple Keys! 
+open apple: `peek(49249)`
+close apple: `peek(49250)`
+
+[Applesoft BASIC Frequency Asked Questions](https://fjkraan.home.xs4all.nl/comp/apple2faq/app2asoftfaq.html)
+
+CPx output time:
+* Min time is: 400us(?)
+* Max time is: 7ms? (totally forgot now)
+
+Geek has [math in discord](https://discord.com/channels/369243434080272385/843878836471201902/940097887281483778) on it.
+
+
 ## 2022-01-14 Stream Notes
 (Am I still putting them here?)
 
