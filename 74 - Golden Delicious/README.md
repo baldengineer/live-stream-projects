@@ -6,6 +6,8 @@ Creating a mini Apple //e using original hardware.
 * https://github.com/baldengineer/Golden-Delicious
 
 ## 2022-02-06 Stream Notes
+Had to connect DISx to PDLx to match the 556's circuit to the 558's design.
+
 Joystick stuff:
 x: pdl(0)
 y: pdl(1)
