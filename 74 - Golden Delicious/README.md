@@ -5,6 +5,16 @@ Creating a mini Apple //e using original hardware.
 ## Link to Design Files
 * https://github.com/baldengineer/Golden-Delicious
 
+## 2022-02-11 Stream Notes
+Commander X16 keyboard modifer scancodes
+
+7   6   5   4     3   2   1   0
+R   R   R   R     L   L   L   L
+Win Alt Sht Ctl   Win Alt Sht Ctl
+
+open apple = 0x08
+closed apple = 0x80
+
 ## 2022-02-06 Stream Notes
 Had to connect DISx to PDLx to match the 556's circuit to the 558's design.
 
