@@ -5,6 +5,50 @@ Creating a mini Apple //e using original hardware.
 ## Link to Design Files
 * https://github.com/baldengineer/Golden-Delicious
 
+## Reset
+`3F4`
+`POKE 1012,0`
+
+## 2022-02-18 Stream Notes
+0xC000 KBD  (dec 49152)
+Digilent: 0x0003
+
+0xC010 STROBE
+Digilent: 0x0803
+
+0xff3a "BELL"
+Digilent: 5CFF
+
+---
+Frogger II keyboard problem, removed IRQ from code.
+
+### Frogger I: crashed at 4008
+ * possibly after going to hi-res?
+ 4008- A=9E X=9C Y=25 P=F5 S=EA
+ 4008- A=9E X=9C Y=25 P=B5 S=EA
+ 4008- A=9E X=9C Y=25 P=37 S=EA
+
+Game boot from power-up
+Plays music on title screen. [SPACE] or [D] crashes
+6949 - A=A2 X=FF Y=03 P=B4 S=E8
+
+    NVss DIZC
+
+0x4008
+Digilent: 0x1002
+
+---
+### Applworks 2.0 crash
+Interrupt auto-rom. load disk with PR#6. 80col activates, title screen asking for disk, then crash.
+
+go back to 40col mode:
+1204- A=3A X=04 Y=01 P=75 S=A7
+
+if boot from auto-rom, then never get into 80col mode:
+(?)201C- A=80 X=C3 Y=FA P=34 S=9A
+   210C- A=08 X=C3 Y=A0 P=34 S=8D
+   210C- A=08 X=C3 Y=A0 P=34 S=80
+ 
 ## 2022-02-11 Stream Notes
 Commander X16 keyboard modifer scancodes
 
