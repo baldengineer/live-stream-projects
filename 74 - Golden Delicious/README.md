@@ -9,6 +9,31 @@ Creating a mini Apple //e using original hardware.
 `3F4`
 `POKE 1012,0`
 
+## Rev 3 ProDOS machine id
+From Flux:[ID Bytes](http://www.1000bit.it/support/manuali/apple/technotes/misc/tn.misc.07.html)
+`$FBB3, $FBC0, and $FBBF return 06, E0, 00 which aligns with //e Enhanced`
+
+From James N: `MACHID is $BF98 after ProDOS is done booting.`
+`Should be $B2 or $B3 for a typical 128K //e, depending on whether you have a clock.`
+
+## Rev 3 Floppy Jumpers
+### Internal Drive 1, External Drive 2
+J4  (9): NC
+J7 (17): 2
+J8 (14): 1
+
+### External Drive 1, Internal Drive 2
+J4  (9): NC
+J7 (17): 1
+J8 (14): 2
+
+### External Drive 1, Drive 2
+J4  (9): 2
+J7 (17): 1
+J8 (14): NC
+
+
+
 ## 2022-02-18 Stream Notes
 0xC000 KBD  (dec 49152)
 Digilent: 0x0003
@@ -126,16 +151,24 @@ report: 4,22,0,0,0,0,
 report: 4,22,7,0,0,0,
 report: 4,22,7,9,0,0,
 report: 4,22,7,0,0,0,
-report: 4,22,7,11,0,0,```
+report: 4,22,7,11,0,0,
+```
 
 
 ## 2021-11-14 Stream Notes
 Oh, by the way, we can boot from disks. Like, real ones.
 
-* This is the 8-bit and 7-bit strings for the Apple //f (0x03FA, in ROM file)
+* This is the 8-bit and 7-bit strings for the Apple //f (0x03FA, in ROM file) .. not:  0x3b09 ..
 C1 F0 F0 EC E5 A0 DD DB
 41 70 70 6C 65 20 5D 5B
  A  p  p  l  e     ]  [
+
+CD E5 E7 E1 A0 A0 C9 C9 E5
+4D 65 67 61 20 20 49 49 65
+ M  e  g  a      I  I  e
+
+    
+
  
 41 70 70 6C 65 20 
 
@@ -155,7 +188,8 @@ Run Stop: 72
 F1-F12: 58 to 69
 
 ## 2021-10-17 Stream Notes
-`PR#4` returned:
+`PR#4` returned:`
+```
 ```
 MMU FLAG E4:4
 IOU FLAG E5:1
@@ -172,6 +206,9 @@ which is also on the data bus
 `C02D` is enable for slotmaker to switch between internal and cards.
 
 `0x02` enables the slot card 1
+
+7654 321x
+0001 0000
 
 pg 183 (Chapter 8 I/O Expansion Slots) in the IIgs hardware reference
 
