@@ -15,12 +15,12 @@ C11	10uF	16V (or 6v)		10
 C14	10uF	16V (or 6v)		10
 C42	10uF	16V (or 6v)		10
 C43	22uF	6.3V 			22uF/25V/1210/X7R, 22uF/25V/1812/X7R, 22uF/25V/2220/X7R
-C45	4.7uF	35V 			4.7 [1210 stock] - ordered: 4.7uF/100V/2220, 4.7uF/100V/1812/X7S
+** C45	4.7uF	35V 			4.7 [1210 stock] - ordered: 4.7uF/100V/2220, 4.7uF/100V/1812/X7S
 C47	68uF	6.3V  			100uF/10V 1206 (X5R)
 
 
-C54	0.47uF	50V				470nF (50V) - In Stock (Used qty(2) 220nF stacked!)
-C55	0.47uF	50V				470nF (50V) - In Stock
+** C54	0.47uF	50V				470nF (50V) - In Stock (Used qty(2) 220nF stacked!)
+** C55	0.47uF	50V				470nF (50V) - In Stock
 C68	100uF	6.3V 			100 100uF/6.3V/TCJ/B-Case (1210)
 
 Power Supply 837-9025 [These fit great!]
