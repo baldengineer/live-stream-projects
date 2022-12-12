@@ -1,5 +1,10 @@
 # Ultrasonic Distance Sign
 
+## Repo link
+https://github.com/baldengineer/ultrasonic-distance-display
+
+## Parts notes
+
 * RCWL - 1601 / RCWL-9600
  * Adafruit Notes on Echo / UART modes
   * https://learn.adafruit.com/ultrasonic-sonar-distance-sensors
@@ -11,7 +16,7 @@
 * Neo7Segment (NeoPixels as a 7-seg display)
  * https://unexpectedmaker.com/shop/neo7segment-display
 
- 
+
 ## Live Stream
 James works on projects like this, live! Hi Chat! 
 
